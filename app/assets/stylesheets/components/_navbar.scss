@@ -1,10 +1,10 @@
 .navbar {
-  background-color: black;
+  background: linear-gradient(to bottom, rgba(black,1), rgba(black,0));
   transition: 0.5s background-color ease;
   padding: 14px;
   width: 100%;
   height: 5.75rem;
-  outline: 2px solid $purple;
+  outline: 2px solid $green;
   outline-offset: -10px;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .nav-link {
-  -webkit-text-stroke: 0.25px $purple;
+  -webkit-text-stroke: 0.25px $green;
   -webkit-text-fill-color: $light-gray;
   font-weight: bolder;
   font-size: 18pt;
@@ -52,29 +52,36 @@
 }
 
 .nav-link:hover, .nav-link:focus, .nav-link:active {
-  -webkit-text-stroke: 0.5px $purple;
+  -webkit-text-stroke: 0.5px $green;
   -webkit-text-fill-color: rgba($light-gray,0.8);
+}
+
+.nav-logo {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 64px;
+  width: 350px;
 }
 
 .nav-logo-text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 28pt;
   font-weight: bold;
-  -webkit-text-stroke: 0.25px $purple;
+  -webkit-text-stroke: 0.5px $green;
   -webkit-text-fill-color: white;
   position: absolute;
-  top: 10px;
-  left: 12vw;
+  top: -22%;
   z-index: 10;
   &:hover, &:focus, &:active {
-    -webkit-text-stroke: 0.5px $purple;
+    -webkit-text-stroke: 1px $green;
     -webkit-text-fill-color: rgba(white,0.8);
   }
 }
 
 .nav-logo-image {
   position: absolute;
-  top: 14px;
-  left: 24vw;
   z-index: 5;
+  top: 8px;
+  left: 18.75%;
 }
