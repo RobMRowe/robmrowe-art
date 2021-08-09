@@ -1,5 +1,5 @@
 .navbar {
-  background-color: white;
+  background-color: black;
   transition: 0.5s background-color ease;
   padding: 14px;
   width: 100%;
@@ -20,10 +20,6 @@
 
 .navbar .navbar-brand img {
   width: 40px;
-}
-
-.navbar-white {
-  background-color: white;
 }
 
 .nav-item {
@@ -48,14 +44,37 @@
 }
 
 .nav-link {
-  -webkit-text-stroke: 0.25px $darkpurple;
-  -webkit-text-fill-color: rgba($purple,0.3);
+  -webkit-text-stroke: 0.25px $purple;
+  -webkit-text-fill-color: $light-gray;
   font-weight: bolder;
   font-size: 18pt;
   font-variant: small-caps;
 }
 
 .nav-link:hover, .nav-link:focus, .nav-link:active {
-  -webkit-text-stroke: 0.5px $darkpurple;
-  -webkit-text-fill-color: rgba($purple,0.8);
+  -webkit-text-stroke: 0.5px $purple;
+  -webkit-text-fill-color: rgba($light-gray,0.8);
+}
+
+.nav-logo-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 28pt;
+  font-weight: bold;
+  -webkit-text-stroke: 0.25px $purple;
+  -webkit-text-fill-color: white;
+  position: absolute;
+  top: 10px;
+  left: 12vw;
+  z-index: 10;
+  &:hover, &:focus, &:active {
+    -webkit-text-stroke: 0.5px $purple;
+    -webkit-text-fill-color: rgba(white,0.8);
+  }
+}
+
+.nav-logo-image {
+  position: absolute;
+  top: 14px;
+  left: 24vw;
+  z-index: 5;
 }

@@ -23,13 +23,17 @@ a, i {
   text-decoration: none !important;
 }
 
+a, i, h1, h2, h3, p {
+  color: $light-gray;
+}
+
 #page-container {
   position: relative;
   min-height: 100vh;
 }
 
 #main-content {
-  background-image: linear-gradient(to top, rgba(white,0.1), rgba(black,0.25)), image-url('back.png');
+  background-image: linear-gradient(to top, rgba(black,0.5), rgba(black,0.2)), image-url('back.jpg');
   background-size: 100vw;
   background-attachment: fixed;
   padding-bottom: 4.75rem;
