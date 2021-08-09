@@ -1,0 +1,24 @@
+<div class="navbar navbar-expand-sm navbar-light fixed-top">
+  <ul class="navbar-nav">
+    <li class="nav-item nav-item-back">
+      <%= link_to root_path, class: "nav-link" do %>
+        <&nbsp;back
+      <% end %>
+    </li>
+    <li class="nav-item nav-item-logo">
+      <%= link_to root_path, class: "nav-logo" do %>
+        <p>logo placeholder</p>
+        <%# <%= image_tag "rmr-logo.svg", alt: "Rob M Rowe", height: 64 %>
+      <% end %>
+    </li>
+    <li class="nav-item">
+      <%= link_to "Biography", "bio", class: "nav-link" %>
+    </li>
+    <li class="nav-item">
+      <%= link_to "Gallery", "store", class: "nav-link" %>
+    </li>
+    <li class="nav-item">
+      <%= link_to "Contact", "contact", class: "nav-link" %>
+    </li>
+  </ul>
+</div>
