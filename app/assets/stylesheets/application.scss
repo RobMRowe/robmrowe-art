@@ -1,0 +1,42 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+html, body {
+  background-color: $darkestpurple;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+a, i {
+  text-decoration: none !important;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#main-content {
+  background-image: linear-gradient(to top, rgba(white,0.1), rgba(black,0.25)), image-url('back.png');
+  background-size: 100vw;
+  background-attachment: fixed;
+  padding-bottom: 4.75rem;
+  padding-top: 5.75rem;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
