@@ -175,7 +175,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     thor (1.1.0)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -222,7 +221,6 @@ DEPENDENCIES
   selenium-webdriver
   simple_form
   spring
-  sqlite3 (~> 1.4)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
@@ -233,4 +231,4 @@ RUBY VERSION
    ruby 2.7.3p183
 
 BUNDLED WITH
-   2.2.25
+   2.3.5
